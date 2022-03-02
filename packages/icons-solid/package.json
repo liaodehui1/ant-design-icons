@@ -10,7 +10,8 @@
   "scripts": {
     "generate": "rimraf src/icons && TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts --target=icon",
     "build": "vite build",
-    "build:watch": "vite build --watch"
+    "build:watch": "vite build --watch",
+    "prepublishOnly": "npm run build"
   },
   "license": "MIT",
   "devDependencies": {
