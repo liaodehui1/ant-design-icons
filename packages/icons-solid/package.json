@@ -1,0 +1,33 @@
+{
+  "name": "@jo/antd-icons-solid",
+  "version": "0.0.1",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "generate": "rimraf src/icons && TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts --target=icon",
+    "build": "vite build",
+    "build:watch": "vite build --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.178",
+    "lodash": "^4.17.21",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.6",
+    "vite-plugin-dts": "^0.9.9",
+    "vite-plugin-solid": "^2.2.5"
+  },
+  "peerDependencies": {
+    "solid-js": ">=1.0.0"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^6.0.0",
+    "@ant-design/icons-svg": "^4.2.1"
+  }
+}

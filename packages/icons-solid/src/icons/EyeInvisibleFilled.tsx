@@ -1,0 +1,20 @@
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+import { EyeInvisibleFilled as BaseEyeInvisibleFilled } from "@ant-design/icons-svg";
+import { renderIconDefinitionToSVGElement } from "@ant-design/icons-svg/es/helpers";
+import { Component } from "solid-js";
+import { AntdIcon, BaseAntdIconProps } from "../components/AntdIcon";
+
+export const EyeInvisibleFilled: Component<BaseAntdIconProps> = (props) => {
+  const svgHTMLString = renderIconDefinitionToSVGElement(BaseEyeInvisibleFilled, {
+    extraSVGAttrs: { width: "1em", height: "1em", fill: "currentColor" },
+  });
+  return (
+    <AntdIcon
+      svgName="eye-invisible"
+      svgString={svgHTMLString}
+      {...props}
+    />
+  );
+};
